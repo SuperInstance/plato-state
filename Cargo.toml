@@ -1,0 +1,18 @@
+[package]
+name = "plato-state"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "16-dimensional room state vectors for PLATO nervous system"
+repository = "https://github.com/SuperInstance/plato-state"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+uuid = { version = "1", features = ["v4", "serde"] }
+
+[dev-dependencies]
+serde_json = "1"
+
+[lib]
+name = "plato_state"
+path = "src/lib.rs"
